@@ -8,11 +8,14 @@
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
 
 /* Sections style */
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+@import url('./hero.css');
+@import url('./about-us.css');
+@import url('./rooms-and-apartments.css');
+@import url('./facilities.css');
+@import url('./best-apartments.css');
+@import url('./gallery.css');
+@import url('./contacts.css');
 @import url('./footer.css');
