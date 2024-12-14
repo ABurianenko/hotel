@@ -1,0 +1,131 @@
+/* Mobile 375px */
+.facilities-section {
+  position: relative;
+}
+
+.right-div img,
+.right-div .circle-text {
+  display: none;
+}
+
+.facilities-small-p {
+  font-family: 'Helvetica Neue LT Std', sans-serif;
+  position: absolute;
+  left: 253px;
+  text-align: right;
+  width: 112px;
+  font-size: 16px;
+}
+
+.left-div img {
+  position: absolute;
+  top: 250px;
+  left: 85px;
+}
+
+.facilities-big-p {
+  width: 221px;
+  height: 138px;
+  font-size: 13px;
+  line-height: 1.7em;
+  text-align: justify;
+  margin-left: 135px;
+  color: var(--text-color);
+}
+
+.facilities-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 225px;
+  width: 263px;
+}
+
+.facilities-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.facilities-title h2 {
+  font-family: 'Miracle', sans-serif;
+  color: var(--text-color);
+  font-size: 60px;
+  line-height: 1em;
+}
+
+.star-icon {
+  fill: var(--secondary-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .right-div .circle-text {
+    display: block;
+  }
+
+  .circle-text {
+    position: absolute;
+    top: 140px;
+    left: 180px;
+    display: block;
+    overflow: visible;
+    width: 80px;
+    font-size: 14px;
+    fill: var(--text-color);
+    opacity: 90%;
+  }
+
+  .circle-text path {
+    fill: none;
+  }
+
+  .facilities-small-p {
+    left: 804px;
+    width: 200px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+
+  .facilities-small-p span {
+    font-style: italic;
+  }
+
+  .left-div img {
+    position: absolute;
+    top: 190px;
+    left: 0;
+    z-index: 2;
+    width: 231px;
+  }
+
+  .facilities-big-p {
+    width: 250px;
+    height: 115px;
+    font-size: 13px;
+    text-align: justify;
+    margin: 0 auto;
+    color: var(--text-color);
+  }
+
+  .facilities-title {
+    margin-left: 397px;
+    margin-bottom: 100px;
+    width: 428px;
+    font-weight: 400;
+  }
+
+  .facilities-title h2 {
+    font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .right-div img {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+}
