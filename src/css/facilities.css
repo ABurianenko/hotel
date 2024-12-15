@@ -95,7 +95,7 @@
   .left-div img {
     position: absolute;
     top: 190px;
-    left: 0;
+    left: 20px;
     z-index: 2;
     width: 231px;
   }
@@ -123,7 +123,50 @@
 
 @media screen and (min-width: 1440px) {
   .right-div img {
+    position: absolute;
     display: block;
+    width: 335px;
+    top: 130px;
+    left: 1080px;
+  }
+
+  .right-div .circle-text {
+    display: none;
+  }
+
+  .facilities-small-p {
+    left: 20px;
+    width: 150px;
+    text-align: left;
+  }
+
+  .facilities-small-p span {
+    font-style: normal;
+  }
+
+  .left-div img {
+    position: absolute;
+    top: 415px;
+    z-index: 2;
+    width: 335px;
+  }
+
+  .facilities-big-p {
+    width: 350px;
+    height: 140px;
+    font-size: 13px;
+    margin-left: 445px;
+    font-size: 18px;
+  }
+
+  .facilities-title {
+    margin-bottom: 130px;
+    margin-left: 445px;
+    width: 547px;
+  }
+
+  .facilities-title h2 {
+    font-size: 120px;
   }
 }
 
