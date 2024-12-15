@@ -1,6 +1,7 @@
 /* Mobile 375px */
 .facilities-section {
   position: relative;
+  background-color: var(--white);
 }
 
 .right-div img,
@@ -171,4 +172,45 @@
 }
 
 @media screen and (min-width: 1920px) {
+  .right-div img {
+    width: 440px;
+    top: 110px;
+    left: 1440px;
+  }
+
+  .right-div .circle-text {
+    display: block;
+  }
+
+  .circle-text {
+    top: 5px;
+    left: 1350px;
+    width: 180px;
+    font-size: 14px;
+  }
+
+  .facilities-small-p {
+    font-size: 26px;
+    left: 20px;
+    width: 250px;
+  }
+
+  .left-div img {
+    top: 415px;
+    width: 440px;
+  }
+
+  .facilities-big-p {
+    margin-left: 660px;
+  }
+
+  .facilities-title {
+    margin-bottom: 110px;
+    margin-left: 660px;
+    width: 657px;
+  }
+
+  .facilities-title h2 {
+    font-size: 150px;
+  }
 }
