@@ -1,3 +1,9 @@
+/**
+  |============================
+  | FIRST PART - MAIN INFO
+  |============================
+*/
+
 /* Mobile 375px */
 .facilities-section {
   position: relative;
@@ -25,6 +31,7 @@
 }
 
 .facilities-big-p {
+  font-family: 'Helvetica Neue LT Std', sans-serif;
   width: 221px;
   height: 138px;
   font-size: 13px;
@@ -186,7 +193,7 @@
     top: 5px;
     left: 1350px;
     width: 180px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .facilities-small-p {
@@ -214,3 +221,9 @@
     font-size: 150px;
   }
 }
+
+/**
+  |============================
+  | SECOND PART - ACCORDEON ANIMATION
+  |============================
+*/
