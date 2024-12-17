@@ -1,0 +1,122 @@
+/* .section-rooms {
+  font-family: Arial, sans-serif;
+  background-color: #fdfbf5;
+  color: #333;
+  padding: 50px 20px;
+} */
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.section-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.rooms-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.room-preview__image {
+  width: 285;
+  height: 339;
+}
+
+.room-details {
+}
+
+.since {
+  border: 1px solid black;
+  border-radius: 99px;
+  width: 249px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  padding: 5px 25px;
+  text-align: left;
+  margin-bottom: 364px;
+}
+
+.room-title {
+  margin-bottom: 30px;
+}
+
+.room-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.room-image {
+  position: relative;
+}
+
+.room-image-big {
+  width: 757px;
+  height: 700px;
+}
+
+.book-room-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  margin-top: 10px;
+  background-color: #f3b124;
+  border: none;
+  border-radius: 50%;
+  padding: 20px;
+  color: #000;
+  cursor: pointer;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.next-btn {
+  width: 100px;
+  height: 100px;
+  clip-path: polygon(
+    50% 0%,
+    /* Верхній центральний */ 75% 5%,
+    /* Верхній правий */ 95% 25%,
+    /* Правий верхній */ 100% 50%,
+    /* Правий центральний */ 95% 75%,
+    /* Правий нижній */ 75% 95%,
+    /* Нижній правий */ 50% 100%,
+    /* Нижній центральний */ 25% 95%,
+    /* Нижній лівий */ 5% 75%,
+    /* Лівий нижній */ 0% 50%,
+    /* Лівий центральний */ 5% 25%,
+    /* Лівий верхній */ 25% 5% /* Верхній лівий */
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  &&:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+  }
+  margin-right: 300px;
+}
