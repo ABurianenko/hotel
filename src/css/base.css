@@ -1,13 +1,19 @@
 :root {
-  /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 16px;
+  font-family: 'Helvetica Neue Roman', 'Helvetica Neue Bold', 'Miracle',
+    sans-serif;
+  font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  --primary-color: #313f38;
+  --secondary-color: #fcd043;
+  --text-color: #1b3b36;
+  --white: #fffcf6;
+  --error: #b03e3e;
+  --attention: #dc9b39;
+  --success: #2a5b46;
+  --link: #1b3b36;
+  --link-hover: #455955;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,11 +23,11 @@
 }
 
 body {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
-  margin: 0;
 }
 
 main {
@@ -29,4 +35,29 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+@font-face {
+  font-family: 'Miracle';
+  src: url('../fonts/Miracle/Miracle_Personal_use.ttf') format('truetype'),
+      url('../fonts/Miracle/Miracle.woff') format('woff'),
+      url('../fonts/Miracle/Miracle.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Roman';
+
+  src: url('../fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd55Roman.otf')
+      format('otf'),
+    url('../fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd-Roman.woff')
+      format('woff'),
+    url('../fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd-Roman.woff2')
+      format('woff2');
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Bold';
+
+  src: url('./fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf')
+    format('otf');
 }
