@@ -38,11 +38,16 @@ main:has(.back-link) {
 }
 
 @font-face {
+  font-family: 'Miracle';
+  src: url('src/fonts/Miracle/Miracle_Personal_use.woff') format('woff');
+}
+
+@font-face {
   font-family: 'Helvetica Neue Roman';
   src: url('src/fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd55Roman.otf') format('otf');
 }
 
 @font-face {
   font-family: 'Helvetica Neue Bold';
-  src: url('src/fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf') format('otf');
+  src: url('src/fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf') format('orf');
 }
