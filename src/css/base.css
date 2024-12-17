@@ -39,10 +39,18 @@ main:has(.back-link) {
 
 @font-face {
   font-family: 'Helvetica Neue Roman';
+<<<<<<< HEAD
   src: url('../fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd55Roman.otf') format('otf');
+=======
+  src: url('./fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd55Roman.otf') format('otf');
+>>>>>>> main
 }
 
 @font-face {
   font-family: 'Helvetica Neue Bold';
+<<<<<<< HEAD
   src: url('../fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf') format('otf');
+=======
+  src: url('./fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf') format('otf');
+>>>>>>> main
 }
