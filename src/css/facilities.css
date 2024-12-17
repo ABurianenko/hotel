@@ -6,8 +6,13 @@
 
 /* Mobile 375px */
 .facilities-section {
-  position: relative;
+  padding-top: 70px;
   background-color: var(--white);
+}
+
+.facilities-main-info {
+  margin-bottom: 70px;
+  position: relative;
 }
 
 .right-div img,
@@ -46,15 +51,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  margin: 0 auto 225px;
+  margin: 0 auto 265px;
   width: 263px;
+  height: 180px;
 }
 
 .facilities-subtitle {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  width: 263px;
 }
 
 .facilities-title h2 {
@@ -62,6 +68,11 @@
   color: var(--text-color);
   font-size: 60px;
   line-height: 1em;
+  width: 220px;
+}
+
+.facilities-subtitle h2 {
+  width: 150px;
 }
 
 .star-icon {
@@ -69,18 +80,27 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .facilities-section {
+    padding-top: 100px;
+  }
+
+  .facilities-main-info {
+    margin-bottom: 100px;
+  }
+
   .right-div .circle-text {
     display: block;
   }
 
   .circle-text {
     position: absolute;
-    top: 140px;
-    left: 180px;
+    top: 170px;
+    left: 200px;
     display: block;
     overflow: visible;
+    transform: scale(0.8);
     width: 80px;
-    font-size: 14px;
+    font-size: 13px;
     fill: var(--text-color);
     opacity: 90%;
   }
@@ -102,9 +122,8 @@
 
   .left-div img {
     position: absolute;
-    top: 190px;
+    top: 210px;
     left: 20px;
-    z-index: 2;
     width: 231px;
   }
 
@@ -119,7 +138,7 @@
 
   .facilities-title {
     margin-left: 397px;
-    margin-bottom: 100px;
+    margin-bottom: 180px;
     width: 428px;
     font-weight: 400;
   }
@@ -130,6 +149,14 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .facilities-section {
+    padding-top: 150px;
+  }
+
+  .facilities-main-info {
+    margin-bottom: 400px;
+  }
+
   .right-div img {
     position: absolute;
     display: block;
@@ -144,7 +171,7 @@
 
   .facilities-small-p {
     left: 20px;
-    width: 150px;
+    width: 160px;
     text-align: left;
   }
 
@@ -168,9 +195,9 @@
   }
 
   .facilities-title {
-    margin-bottom: 130px;
+    margin-bottom: 160px;
     margin-left: 445px;
-    width: 547px;
+    min-height: 315px;
   }
 
   .facilities-title h2 {
@@ -179,9 +206,17 @@
 }
 
 @media screen and (min-width: 1920px) {
+  .facilities-section {
+    padding-top: 200px;
+  }
+
+  .facilities-main-info {
+    margin-bottom: 200px;
+  }
+
   .right-div img {
     width: 440px;
-    top: 110px;
+    top: 150px;
     left: 1440px;
   }
 
@@ -190,10 +225,11 @@
   }
 
   .circle-text {
-    top: 5px;
+    top: 50px;
     left: 1350px;
     width: 180px;
     font-size: 13px;
+    transform: scale(0.9);
   }
 
   .facilities-small-p {
@@ -212,9 +248,9 @@
   }
 
   .facilities-title {
-    margin-bottom: 110px;
+    margin-bottom: 160px;
     margin-left: 660px;
-    width: 657px;
+    min-height: 390px;
   }
 
   .facilities-title h2 {
@@ -227,3 +263,49 @@
   | SECOND PART - ACCORDEON ANIMATION
   |============================
 */
+
+/* Mobile 375px */
+
+.ac-arrow {
+  display: none;
+}
+
+.ac-trigger {
+  background-color: lightcoral;
+  color: black;
+  border: none;
+  width: 40px;
+  height: 40px;
+}
+
+.closed-panel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 38px;
+  padding-right: 38px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.closed-panel-container img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 40px;
+}
+
+.number-p {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 30px;
+  font-family: 'Miracle', sans-serif;
+  font-weight: 400;
+}
+
+.panel-header {
+  font-size: 24px;
+  font-family: 'Miracle', sans-serif;
+  text-align: center;
+}
