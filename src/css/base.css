@@ -39,8 +39,9 @@ main:has(.back-link) {
 
 @font-face {
   font-family: 'Miracle';
-  src: url('../fonts/Miracle/Miracle.woff') format('woff'),
-    url('../fonts/Miracle/Miracle.woff2') format('woff2');
+  src: url('../fonts/Miracle/Miracle_Personal_use.ttf') format('truetype'),
+      url('../fonts/Miracle/Miracle.woff') format('woff'),
+      url('../fonts/Miracle/Miracle.woff2') format('woff2');
 }
 
 @font-face {
