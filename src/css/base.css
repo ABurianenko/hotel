@@ -1,19 +1,19 @@
 :root {
-  font-family: 'Miracle', 'Helvetica Neue Roman', 'Helvetica Neue Bold', sans-serif;
+  font-family: 'Miracle', 'Helvetica Neue Roman', 'Helvetica Neue Bold',
+    sans-serif;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
 
-  --primary-color: #313F38;
-  --secondary-color: #FCD043;
-  --text-color: #1B3B36;
-  --white: #FFFCF6;
-  --error: #B03E3E;
-  --attention: #DC9B39;
-  --success: #2A5B46;
+  --primary-color: #313f38;
+  --secondary-color: #fcd043;
+  --text-color: #1b3b36;
+  --white: #fffcf6;
+  --error: #b03e3e;
+  --attention: #dc9b39;
+  --success: #2a5b46;
   --link: #1b3b36;
   --link-hover: #455955;
-
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -39,18 +39,20 @@ main:has(.back-link) {
 
 @font-face {
   font-family: 'Helvetica Neue Roman';
-<<<<<<< HEAD
-  src: url('../fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd55Roman.otf') format('otf');
-=======
-  src: url('./fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd55Roman.otf') format('otf');
->>>>>>> main
+
+  src: url('./fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd55Roman.otf')
+    format('otf');
+
+  src: url('src/fonts/HelveticaNeueLTStd55Roman/HelveticaNeueLTStd55Roman.otf')
+    format('otf');
 }
 
 @font-face {
   font-family: 'Helvetica Neue Bold';
-<<<<<<< HEAD
-  src: url('../fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf') format('otf');
-=======
-  src: url('./fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf') format('otf');
->>>>>>> main
+
+  src: url('./fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf')
+    format('otf');
+
+  src: url('src/fonts/HelveticaNeueLTStd75Bold/HelveticaNeueLTStd75Bold.otf')
+    format('otf');
 }
