@@ -3,7 +3,7 @@
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 10px;
 }
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
@@ -11,9 +11,31 @@
     max-width: 768px;
   }
 }
-/* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
+
+@media only screen and (min-width: 1024px) {
   .container {
-    max-width: 1200px;
+    max-width: 1024px;
+    padding: 0 20px;
   }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    padding: 0 30px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Miracle', sans-serif;
+}
+
+ul, ol {
+  list-style: none;
 }
