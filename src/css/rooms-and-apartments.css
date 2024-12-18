@@ -47,8 +47,6 @@
 }
 
 .room-preview__image {
-  width: 285;
-  height: 339;
   display: none;
 }
 
@@ -190,7 +188,8 @@
 
   .section-info {
     align-self: flex-end;
-    width: 200px;
+    max-width: 200px;
+    width: 100%;
     text-align: left;
   }
 
@@ -242,5 +241,38 @@
 
   .section-info-container {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .section-info {
+    align-self: auto;
+    max-width: 335px;
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .room-preview {
+    max-width: 285px;
+    width: 100%;
+  }
+
+  .room-preview__image {
+    display: block;
+    padding-right: 138px;
+  }
+
+  .since {
+    display: block;
+  }
+
+  .room-details-content {
+    display: flex;
+  }
+
+  .room-image-big {
+    max-width: 572px;
+    width: 100%;
   }
 }
