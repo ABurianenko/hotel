@@ -59,7 +59,6 @@
   align-items: center;
   padding: 5px 25px;
   text-align: left;
-  margin-bottom: 364px;
   display: none;
 }
 
@@ -106,10 +105,6 @@
   font-size: 16px;
   margin-bottom: 30px;
 }
-
-/* .pagination-one {
-  color: rgba(0, 0, 0, 0.2);
-} */
 
 .pagination-slash {
   color: rgba(0, 0, 0, 0.2);
@@ -237,6 +232,7 @@
   .section-title {
     font-size: 125px;
     line-height: 84%;
+    margin-bottom: 150px;
   }
 
   .section-info-container {
@@ -269,10 +265,24 @@
 
   .room-details-content {
     display: flex;
+    position: absolute;
   }
 
-  .room-image-big {
+  .rooms-content {
+    position: relative;
+  }
+
+  .room-image {
     max-width: 572px;
     width: 100%;
+  }
+
+  .next-btn {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: -271px;
+    width: 170px;
+    height: 170px;
   }
 }
