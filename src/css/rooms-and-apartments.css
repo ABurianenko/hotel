@@ -1,3 +1,8 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 .section-rooms {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -20,12 +25,11 @@
 }
 
 .section-title {
-  max-width: 324px;
   font-weight: 400;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 100%;
   text-transform: uppercase;
-  color: --text-color;
+  color: var(--text-color);
   margin-bottom: 50px;
 }
 
@@ -37,7 +41,7 @@
   font-weight: 400;
   font-size: 12px;
   text-transform: uppercase;
-  color: --text-color;
+  color: var(--text-color);
   text-align: left;
   max-width: 150px;
 }
@@ -90,7 +94,7 @@
   font-weight: 400;
   font-size: 14px;
   text-align: center;
-  color: --text-color;
+  color: var(--text-color);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   &&:hover {
     transform: scale(1.1);
@@ -118,7 +122,7 @@
   font-size: 30px;
   line-height: 100%;
   text-transform: capitalize;
-  color: --text-color;
+  color: var(--text-color);
   margin-bottom: 50px;
 }
 
@@ -133,7 +137,7 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 177%;
-  color: --text-color;
+  color: var(--text-color);
   opacity: 0.8;
 }
 
@@ -179,12 +183,64 @@
   .section-title {
     font-size: 100px;
     line-height: 80%;
-    max-width: 691px;
+  }
+  .section-title span:first-child {
+    display: block;
   }
 
   .section-info {
     align-self: flex-end;
     width: 200px;
     text-align: left;
+  }
+
+  .rooms-slide {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 127px;
+  }
+
+  .next-btn {
+    position: absolute;
+    top: 0;
+    left: -271px;
+  }
+
+  .rooms-slide-content {
+    padding-left: 271px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .rooms-content-text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .room-description {
+    display: flex;
+    flex-shrink: 0;
+    max-width: 250px;
+    width: 100%;
+  }
+
+  .room-image {
+    max-width: 356px;
+    width: 100%;
+  }
+  .pagination {
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section-title {
+    font-size: 125px;
+    line-height: 84%;
+  }
+
+  .section-info-container {
+    flex-direction: row;
   }
 }
