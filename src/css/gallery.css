@@ -1,31 +1,5 @@
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border: 0;
-}
-
-/* .container {
-  min-width: 375px;
-  max-width: 1023px;
-  margin: 0 auto;
-  padding: 0; */
-
-/* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-} */
-
 .our-gallery {
-  background-color: #313f38;
+  background-color: var(--primary-color);
   padding: 70px 10px;
   margin: 0 auto;
   min-height: 944px;
@@ -46,7 +20,7 @@ img {
 }
 
 .gallery-label {
-  fill: #fcd043;
+  fill: var(--secondary-color);
   position: absolute;
   top: 65%;
   left: 50%;
@@ -61,9 +35,13 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  color: #fcd043;
+  color: var(--secondary-color);
   max-width: 338px;
   margin-bottom: 50px;
+}
+
+.gallery-par-hall {
+  display: none;
 }
 
 .gallery-par {
@@ -156,7 +134,7 @@ img {
 }
 
 .gallery-label-polygon {
-  fill: #fcd043;
+  fill: var(--secondary-color);
   margin-right: 16px;
 }
 
@@ -169,7 +147,219 @@ img {
   font-weight: 400;
   font-size: 16px;
   text-transform: capitalize;
-  color: #fffcf6;
+  color: var(--white);
   opacity: 0.8;
   max-width: 250px;
+}
+
+.marquee {
+  display: none;
+}
+
+/* ******************* Mobile 2 ***************************** */
+
+@media (min-width: 768px) {
+  .gallery-logo {
+    margin-bottom: 50px;
+  }
+
+  .gallery-title {
+    font-weight: 500;
+    font-size: 80px;
+    max-width: 480px;
+  }
+
+  .gallery-par {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 177%;
+    max-width: 600px;
+    margin-bottom: 150vh;
+  }
+
+  .photo-2 {
+    bottom: 10%;
+    left: -5%;
+    width: 30%;
+  }
+
+  .photo-4 {
+    top: 35%;
+    left: 2%;
+    width: 40%;
+  }
+
+  .photo-7 {
+    right: -5%;
+    top: 60%;
+    width: 30%;
+  }
+
+  .photo-8 {
+    right: 2%;
+    top: 40%;
+    width: 50%;
+  }
+
+  .gallery-section-footer {
+    justify-content: center;
+  }
+
+  .gallery-par-footer {
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 350px;
+  }
+}
+
+/* ******************* Tablet ***************************** */
+@media (min-width: 1024px) {
+  .our-gallery {
+    padding: 133px 0px 101px;
+    margin: 0 auto;
+    min-height: 944px;
+  }
+
+  .gallery-par-hall {
+    display: block;
+    font-family: 'Helvetica Neue LT Std', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fffcf6;
+    font-style: italic;
+    max-width: 200px;
+    margin-left: 20px;
+    position: absolute;
+    top: 133px;
+  }
+
+  .gallery-logo {
+    margin-bottom: 80px;
+  }
+
+  .gallery-title {
+    font-size: 100px;
+    line-height: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .gallery-par {
+    opacity: 0.8;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 85vh;
+  }
+
+  .photo-1 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    width: 30%;
+  }
+
+  .photo-2 {
+    display: none;
+  }
+
+  .photo-3 {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    width: 15%;
+  }
+
+  .photo-4 {
+    display: none;
+  }
+
+  .photo-5 {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    z-index: 9;
+  }
+
+  .photo-6 {
+    display: none;
+  }
+
+  .photo-7 {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 10%;
+    opacity: 1;
+  }
+
+  .photo-8 {
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 70%;
+    width: 25%;
+    z-index: 8;
+  }
+
+  .gallery-section-footer {
+    margin-bottom: 78px;
+  }
+
+  .bank-hotel-line {
+    font-family: 'Miracle', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 133%;
+    color: rgba(255, 252, 246, 0.12);
+    color: var(--white);
+  }
+
+  .marquee {
+    display: block;
+    overflow: hidden;
+    font-family: 'Pridi', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+
+  .marquee__inner {
+    display: flex;
+  }
+
+  .marquee__line {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px 15px;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .line-rest {
+    opacity: 0.3;
+  }
 }
