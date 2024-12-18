@@ -25,7 +25,7 @@ img {
 } */
 
 .our-gallery {
-  background-color: #313f38;
+  background-color: var(--primary-color);
   padding: 70px 10px;
   margin: 0 auto;
   min-height: 944px;
@@ -46,7 +46,7 @@ img {
 }
 
 .gallery-label {
-  fill: #fcd043;
+  fill: var(--secondary-color);
   position: absolute;
   top: 65%;
   left: 50%;
@@ -61,7 +61,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   margin: 0 auto;
-  color: #fcd043;
+  color: var(--secondary-color);
   max-width: 338px;
   margin-bottom: 50px;
 }
