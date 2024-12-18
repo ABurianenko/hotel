@@ -33,6 +33,7 @@
   position: absolute;
   top: 250px;
   left: 85px;
+  width: 192px;
 }
 
 .facilities-big-p {
@@ -79,6 +80,51 @@
   fill: var(--secondary-color);
 }
 
+@media screen and (min-width: 768px) {
+  .facilities-section {
+    padding-top: 80px;
+  }
+
+  .facilities-main-info {
+    margin-bottom: 120px;
+  }
+
+  .facilities-small-p {
+    left: 604px;
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .facilities-small-p span {
+    font-style: italic;
+  }
+
+  .left-div img {
+    top: 210px;
+    left: 20px;
+    width: 200px;
+  }
+
+  .facilities-big-p {
+    width: 250px;
+    height: 115px;
+    font-size: 13px;
+    text-align: justify;
+    margin: 0 auto;
+  }
+
+  .facilities-title {
+    margin-left: 300px;
+    margin-bottom: 160px;
+    width: 428px;
+    font-weight: 400;
+  }
+
+  .facilities-title h2 {
+    font-size: 70px;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .facilities-section {
     padding-top: 100px;
@@ -121,19 +167,7 @@
   }
 
   .left-div img {
-    position: absolute;
-    top: 210px;
-    left: 20px;
     width: 231px;
-  }
-
-  .facilities-big-p {
-    width: 250px;
-    height: 115px;
-    font-size: 13px;
-    text-align: justify;
-    margin: 0 auto;
-    color: var(--text-color);
   }
 
   .facilities-title {
@@ -271,11 +305,12 @@
 }
 
 .ac-trigger {
-  background-color: lightcoral;
+  background-color: transparent;
   color: black;
   border: none;
-  width: 40px;
-  height: 40px;
+  width: 100%;
+  height: 276px;
+  position: absolute;
 }
 
 .closed-panel-container {
