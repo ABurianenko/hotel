@@ -1,8 +1,6 @@
 .section-rooms {
-  padding-bottom: 30px;
-  padding-top: 30px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  padding-top: 70px;
+  padding-bottom: 70px;
   background-color: #fffcf6;
 }
 
@@ -12,7 +10,17 @@
   margin-bottom: 50px;
 }
 
+.subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--text-color);
+  margin-bottom: 30px;
+  text-align: right;
+}
+
 .section-title {
+  max-width: 324px;
   font-weight: 400;
   font-size: 60px;
   line-height: 100%;
@@ -23,8 +31,7 @@
 
 .section-info-container {
   display: flex;
-  justify-content: flex-start;
-  max-width: 150px;
+  flex-direction: column;
 }
 .section-info {
   font-weight: 400;
@@ -32,6 +39,7 @@
   text-transform: uppercase;
   color: --text-color;
   text-align: left;
+  max-width: 150px;
 }
 
 .room-preview__image {
@@ -66,8 +74,6 @@
 
 .room-image-big {
   display: block;
-  max-width: 355px;
-  height: 423px;
   width: 100%;
 }
 
@@ -85,6 +91,11 @@
   font-size: 14px;
   text-align: center;
   color: --text-color;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  &&:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .pagination {
@@ -113,8 +124,8 @@
 
 .room-description-container {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 64px;
   margin-bottom: 70px;
 }
@@ -124,15 +135,15 @@
   line-height: 177%;
   color: --text-color;
   opacity: 0.8;
-  max-width: 221px;
 }
 
 .next-btn {
+  flex-shrink: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
   clip-path: polygon(
     50% 0%,
     /* Верхній центральний */ 75% 5%,
@@ -148,14 +159,32 @@
     /* Лівий верхній */ 25% 5% /* Верхній лівий */
   );
   text-align: center;
-  font-size: 1rem;
   color: black;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   &&:hover {
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  .subtitle {
+    display: none;
+  }
+  .section-info-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .section-title {
+    font-size: 100px;
+    line-height: 80%;
+    max-width: 691px;
+  }
+
+  .section-info {
+    align-self: flex-end;
+    width: 200px;
+    text-align: left;
+  }
 }
