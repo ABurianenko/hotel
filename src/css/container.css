@@ -1,6 +1,6 @@
 /* Styles for Mobile devices */
 .container {
-  min-width: 320px;
+  min-width: 300px;
   max-width: 375px;
   margin: 0 auto;
   padding: 0 10px;
@@ -32,10 +32,16 @@
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Miracle', sans-serif;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
