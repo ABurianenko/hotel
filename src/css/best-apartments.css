@@ -59,7 +59,7 @@ img {
 
 .line-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 2220px;
   margin: 0 auto 100px;
 }
 
@@ -116,7 +116,7 @@ img {
     background-image: url(../img/space-copenhagen-tab-1x.jpg);
     background-size: cover;
     background-position: center;
-    max-height: 590px;
+    max-height: 650px;
     padding: 50px 0 16px;
     position: relative;
   }
@@ -165,7 +165,7 @@ img {
 
   .best-apartmens {
     background-image: url(../img/space-copenhagen-des-1x.jpg);
-    max-height: 680px;
+    max-height: 780px;
     padding-top: 100px;
     position: relative;
   }
@@ -194,3 +194,13 @@ img {
 }
 
 /* *************** Desktop 1920 ****************** */
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 2200px;
+  }
+
+  .best-apartmens {
+    max-height: 800px;
+  }
+}
