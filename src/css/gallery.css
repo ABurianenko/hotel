@@ -1,0 +1,532 @@
+.our-gallery {
+  background-color: var(--primary-color);
+  padding: 70px 10px;
+  margin: 0 auto;
+  min-height: 944px;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.gallery-logo {
+  width: 70px;
+  height: 52px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+  position: relative;
+}
+
+.gallery-label-text {
+}
+
+.gallery-label {
+  fill: var(--secondary-color);
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-title {
+  font-family: 'Miracle', sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--secondary-color);
+  max-width: 338px;
+  margin-bottom: 50px;
+}
+
+.gallery-par-hall {
+  display: none;
+}
+
+.gallery-par {
+  font-family: 'Helvetica Neue LT Std', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 177%;
+  text-align: center;
+  color: #fffcf6;
+  min-width: 300px;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 100vh;
+}
+
+.gallery-photo-container {
+  max-width: 100%;
+}
+
+.photo-1 {
+  display: none;
+}
+
+.photo-2 {
+  position: absolute;
+  bottom: 15%;
+  left: -5%;
+  /* width: 45%; */
+  width: 190px;
+  height: auto;
+  opacity: 0.2;
+}
+
+.photo-3 {
+  display: none;
+}
+
+.photo-4 {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  width: 170px;
+  /* width: 40%; */
+  height: auto;
+}
+
+.photo-5 {
+  display: none;
+}
+
+.photo-6 {
+  position: absolute;
+  top: 68%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 200px; */
+  width: 45%;
+  height: auto;
+  z-index: 9;
+}
+
+.photo-7 {
+  position: absolute;
+  right: -5%;
+  top: 50%;
+  /* width: 60%; */
+  width: 180px;
+  height: auto;
+  /* height: 15%; */
+  opacity: 0.1;
+}
+
+.photo-8 {
+  position: absolute;
+  right: 2%;
+  top: 45%;
+  width: 180px;
+  /* height: 123px; */
+  /* width: 35%; */
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.photo-9 {
+  display: none;
+}
+
+.gallery-section-footer {
+  display: flex;
+}
+
+.gallery-label-polygon {
+  fill: var(--secondary-color);
+  margin-right: 16px;
+}
+
+.gallery-par-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Helvetica Neue LT Std', sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: var(--white);
+  opacity: 0.8;
+  max-width: 250px;
+}
+
+.marquee {
+  display: none;
+}
+
+/* ******************* Mobile 2 ***************************** */
+
+@media (min-width: 768px) {
+  .gallery-logo {
+    margin-bottom: 50px;
+  }
+
+  .gallery-title {
+    font-weight: 500;
+    font-size: 80px;
+    max-width: 480px;
+  }
+
+  .gallery-par {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 177%;
+    max-width: 600px;
+    margin-bottom: 150vh;
+  }
+
+  .photo-2 {
+    bottom: 10%;
+    left: -5%;
+    width: 30%;
+  }
+
+  .photo-4 {
+    top: 35%;
+    left: 2%;
+    width: 40%;
+  }
+
+  .photo-7 {
+    right: -5%;
+    top: 60%;
+    width: 30%;
+  }
+
+  .photo-8 {
+    right: 2%;
+    top: 40%;
+    width: 50%;
+  }
+
+  .photo-9 {
+    display: none;
+  }
+
+  .gallery-section-footer {
+    justify-content: center;
+  }
+
+  .gallery-par-footer {
+    font-weight: 500;
+    font-size: 18px;
+    max-width: 350px;
+  }
+}
+
+/* ******************* Tablet ***************************** */
+@media (min-width: 1024px) {
+  .our-gallery {
+    padding: 133px 0px 101px;
+    margin: 0 auto;
+    min-height: 944px;
+  }
+
+  .gallery-par-hall {
+    display: block;
+    font-family: 'Helvetica Neue LT Std', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--white);
+    font-style: italic;
+    max-width: 200px;
+    margin-left: 20px;
+    position: absolute;
+    top: 133px;
+  }
+
+  .gallery-logo {
+    margin-bottom: 80px;
+  }
+
+  .gallery-title {
+    font-size: 100px;
+    line-height: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .gallery-par {
+    opacity: 0.8;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 85vh;
+  }
+
+  .photo-1 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    width: 30%;
+  }
+
+  .photo-2 {
+    display: none;
+  }
+
+  .photo-3 {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    width: 15%;
+  }
+
+  .photo-4 {
+    display: none;
+  }
+
+  .photo-5 {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    z-index: 9;
+  }
+
+  .photo-6 {
+    display: none;
+  }
+
+  .photo-7 {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 10%;
+    opacity: 1;
+  }
+
+  .photo-8 {
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 70%;
+    width: 25%;
+    z-index: 8;
+  }
+
+  .photo-9 {
+    display: none;
+  }
+
+  .gallery-section-footer {
+    margin-bottom: 78px;
+  }
+
+  .bank-hotel-line {
+    font-family: 'Miracle', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 133%;
+    color: rgba(255, 252, 246, 0.12);
+    color: var(--white);
+  }
+
+  .marquee {
+    display: block;
+    overflow: hidden;
+    font-family: 'Pridi', sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+    text-transform: uppercase;
+  }
+
+  .marquee__inner {
+    display: flex;
+  }
+
+  .marquee__line {
+    flex-shrink: 0;
+    margin: 0;
+    padding: 10px 15px;
+    min-width: 100%;
+    white-space: nowrap;
+    animation-name: marqueeLine;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes marqueeLine {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  .line-rest {
+    opacity: 0.3;
+  }
+}
+
+/* ****************** Desktop 1440 ************************ */
+
+@media (min-width: 1440px) {
+  .our-gallery {
+    padding: 263px 0px 179px;
+  }
+
+  .gallery-par-hall {
+    display: none;
+  }
+
+  .gallery-logo {
+    margin-bottom: 100px;
+  }
+
+  .gallery-title {
+    font-size: 125px;
+    line-height: 84%;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+
+  .gallery-par {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+  }
+
+  .photo-1 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: -5%;
+    width: 20%;
+  }
+
+  .photo-2 {
+    display: none;
+  }
+
+  .photo-3 {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    width: 15%;
+  }
+
+  .photo-4 {
+    display: none;
+  }
+
+  .photo-5 {
+    display: block;
+    position: absolute;
+    top: 52%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    z-index: 9;
+  }
+
+  .photo-6 {
+    display: none;
+  }
+
+  .photo-7 {
+    display: none;
+  }
+
+  .photo-8 {
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 70%;
+    width: 25%;
+    z-index: 8;
+  }
+
+  .photo-9 {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 15%;
+  }
+
+  .gallery-par-footer {
+    font-size: 22px;
+  }
+
+  .bank-hotel-line {
+    font-size: 100px;
+    line-height: 120%;
+  }
+}
+
+/* ************* Desktop 1920 ****************** */
+
+@media (min-width: 1920px) {
+  .our-gallery {
+    padding: 300px 0px;
+  }
+
+  .gallery-par-hall {
+    display: block;
+    font-size: 26px;
+    max-width: 300px;
+    margin-left: 30px;
+    top: 300px;
+  }
+
+  .gallery-title {
+    font-size: 150px;
+    line-height: 87%;
+    max-width: 1000px;
+  }
+
+  .gallery-par {
+    font-size: 22px;
+    max-width: 600px;
+  }
+
+  .photo-1 {
+    display: block;
+    position: absolute;
+    top: 27%;
+    left: 0%;
+    width: 20%;
+    height: auto;
+  }
+
+  .photo-5 {
+    top: 50%;
+    width: 55%;
+  }
+
+  .photo-7 {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 15%;
+    opacity: 1;
+  }
+
+  .photo-9 {
+    display: none;
+  }
+
+  .bank-hotel-line {
+    font-size: 120px;
+    line-height: 117%;
+  }
+}
