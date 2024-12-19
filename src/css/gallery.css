@@ -59,9 +59,6 @@
 
 .gallery-photo-container {
   max-width: 100%;
-  /* height: 500px; */
-  /* overflow: hidden; */
-  /* margin-bottom: 100px; */
 }
 
 .photo-1 {
@@ -361,5 +358,109 @@
 
   .line-rest {
     opacity: 0.3;
+  }
+}
+
+/* ****************** Desktop 1440 ************************ */
+@media (min-width: 1024px) {
+  .our-gallery {
+    padding: 133px 0px 101px;
+    margin: 0 auto;
+    min-height: 944px;
+  }
+
+  .gallery-par-hall {
+    display: block;
+    font-family: 'Helvetica Neue LT Std', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fffcf6;
+    font-style: italic;
+    max-width: 200px;
+    margin-left: 20px;
+    position: absolute;
+    top: 133px;
+  }
+
+  .gallery-logo {
+    margin-bottom: 80px;
+  }
+
+  .gallery-title {
+    font-size: 100px;
+    line-height: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  .gallery-par {
+    opacity: 0.8;
+    min-width: 200px;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 85vh;
+  }
+
+  .photo-1 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    left: -10%;
+    width: 30%;
+  }
+
+  .photo-2 {
+    display: none;
+  }
+
+  .photo-3 {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 3%;
+    width: 15%;
+  }
+
+  .photo-4 {
+    display: none;
+  }
+
+  .photo-5 {
+    display: block;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: auto;
+    z-index: 9;
+  }
+
+  .photo-6 {
+    display: none;
+  }
+
+  .photo-7 {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 10%;
+    opacity: 1;
+  }
+
+  .photo-8 {
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 70%;
+    width: 25%;
+    z-index: 8;
+  }
+
+  .gallery-section-footer {
+    margin-bottom: 78px;
   }
 }
