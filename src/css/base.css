@@ -26,8 +26,10 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -40,8 +42,8 @@ main:has(.back-link) {
 @font-face {
   font-family: 'Miracle';
   src: url('../fonts/Miracle/Miracle_Personal_use.ttf') format('truetype'),
-      url('../fonts/Miracle/Miracle.woff') format('woff'),
-      url('../fonts/Miracle/Miracle.woff2') format('woff2');
+    url('../fonts/Miracle/Miracle.woff') format('woff'),
+    url('../fonts/Miracle/Miracle.woff2') format('woff2');
 }
 
 @font-face {
