@@ -126,6 +126,10 @@
   max-width: 100%;
 }
 
+.photo-9 {
+  display: none;
+}
+
 .gallery-section-footer {
   display: flex;
 }
@@ -198,6 +202,10 @@
     width: 50%;
   }
 
+  .photo-9 {
+    display: none;
+  }
+
   .gallery-section-footer {
     justify-content: center;
   }
@@ -223,7 +231,7 @@
     font-weight: 400;
     font-size: 18px;
     text-transform: uppercase;
-    color: #fffcf6;
+    color: var(--white);
     font-style: italic;
     max-width: 200px;
     margin-left: 20px;
@@ -306,6 +314,10 @@
     top: 70%;
     width: 25%;
     z-index: 8;
+  }
+
+  .photo-9 {
+    display: none;
   }
 
   .gallery-section-footer {
@@ -362,53 +374,40 @@
 }
 
 /* ****************** Desktop 1440 ************************ */
-@media (min-width: 1024px) {
+
+@media (min-width: 1440px) {
   .our-gallery {
-    padding: 133px 0px 101px;
-    margin: 0 auto;
-    min-height: 944px;
+    padding: 263px 0px 179px;
   }
 
   .gallery-par-hall {
-    display: block;
-    font-family: 'Helvetica Neue LT Std', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #fffcf6;
-    font-style: italic;
-    max-width: 200px;
-    margin-left: 20px;
-    position: absolute;
-    top: 133px;
+    display: none;
   }
 
   .gallery-logo {
-    margin-bottom: 80px;
+    margin-bottom: 100px;
   }
 
   .gallery-title {
-    font-size: 100px;
-    line-height: 80%;
-    max-width: 800px;
+    font-size: 125px;
+    line-height: 84%;
+    max-width: 900px;
     margin: 0 auto;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   .gallery-par {
-    opacity: 0.8;
-    min-width: 200px;
-    max-width: 500px;
-    margin: 0 auto;
-    margin-bottom: 85vh;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
   }
 
   .photo-1 {
     display: block;
     position: absolute;
     top: 30%;
-    left: -10%;
-    width: 30%;
+    left: -5%;
+    width: 20%;
   }
 
   .photo-2 {
@@ -430,8 +429,8 @@
   .photo-5 {
     display: block;
     position: absolute;
-    top: 55%;
-    left: 50%;
+    top: 52%;
+    left: 52%;
     transform: translate(-50%, -50%);
     width: 50%;
     height: auto;
@@ -443,12 +442,7 @@
   }
 
   .photo-7 {
-    display: block;
-    position: absolute;
-    right: 0%;
-    top: 30%;
-    width: 10%;
-    opacity: 1;
+    display: none;
   }
 
   .photo-8 {
@@ -460,7 +454,79 @@
     z-index: 8;
   }
 
-  .gallery-section-footer {
-    margin-bottom: 78px;
+  .photo-9 {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 15%;
+  }
+
+  .gallery-par-footer {
+    font-size: 22px;
+  }
+
+  .bank-hotel-line {
+    font-size: 100px;
+    line-height: 120%;
+  }
+}
+
+/* ************* Desktop 1920 ****************** */
+
+@media (min-width: 1920px) {
+  .our-gallery {
+    padding: 300px 0px;
+  }
+
+  .gallery-par-hall {
+    display: block;
+    font-size: 26px;
+    max-width: 300px;
+    margin-left: 30px;
+    top: 300px;
+  }
+
+  .gallery-title {
+    font-size: 150px;
+    line-height: 87%;
+    max-width: 1000px;
+  }
+
+  .gallery-par {
+    font-size: 22px;
+    max-width: 600px;
+  }
+
+  .photo-1 {
+    display: block;
+    position: absolute;
+    top: 27%;
+    left: 0%;
+    width: 20%;
+    height: auto;
+  }
+
+  .photo-5 {
+    top: 50%;
+    width: 55%;
+  }
+
+  .photo-7 {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+    width: 15%;
+    opacity: 1;
+  }
+
+  .photo-9 {
+    display: none;
+  }
+
+  .bank-hotel-line {
+    font-size: 120px;
+    line-height: 117%;
   }
 }
