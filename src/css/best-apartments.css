@@ -1,0 +1,206 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 0;
+}
+
+.container {
+  min-width: 375px;
+  max-width: 1023px;
+  margin: 0 auto;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.best-apartmens {
+  background-image: url(../img/space-copenhagen-1x-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 74px;
+  padding-bottom: 70px;
+  height: auto;
+  text-align: left;
+  overflow: hidden;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .best-apartmens {
+    background-image: url(../img/space-copenhagen-2x-mobile.jpg);
+  }
+}
+
+.best-apartmens-title {
+  font-family: 'Miracle', sans-serif;
+  font-weight: 400;
+  font-size: 50px;
+
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 233px;
+  margin-left: 10px;
+  max-width: 355px;
+}
+
+.line-container {
+  width: 100%;
+  max-width: 2220px;
+  margin: 0 auto 100px;
+}
+
+.best-apartmens-line {
+  stroke-width: 1px;
+  stroke: var(--secondary-color);
+  width: 100%;
+  height: auto;
+}
+
+.best-apartmens-line-tab {
+  display: none;
+}
+
+.par-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.best-apartmens-par {
+  font-family: 'Helvetica Neue LT Std', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  width: 210px;
+  margin-left: auto;
+  text-align: left;
+}
+
+/* ************ Mobile 2 ******************** */
+
+@media (min-width: 768px) {
+  .best-apartmens-title {
+    font-size: 70px;
+    line-height: 100%;
+    margin-left: 20px;
+  }
+
+  .best-apartmens-par {
+    font-size: 24px;
+    width: 250px;
+  }
+}
+
+/* **************** Tablet ***************** */
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1439px;
+  }
+
+  .best-apartmens {
+    background-image: url(../img/space-copenhagen-tab-1x.jpg);
+    background-size: cover;
+    background-position: center;
+    max-height: 650px;
+    padding: 50px 0 16px;
+    position: relative;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .best-apartmens {
+      background-image: url(../img/space-copenhagen-tab-2x.jpg);
+    }
+  }
+
+  .best-apartmens-title {
+    font-size: 100px;
+    line-height: 80%;
+    max-width: 582px;
+  }
+
+  .best-apartmens-line {
+    display: none;
+  }
+
+  .best-apartmens-line-tab {
+    display: block;
+    position: absolute;
+    top: 100px;
+  }
+
+  .par-wrapper {
+    position: absolute;
+    top: 350px;
+    left: 20px;
+  }
+
+  .best-apartmens-par {
+    width: 300px;
+  }
+}
+
+/* ************ Desktop 1440 ********************* */
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1919px;
+  }
+
+  .best-apartmens {
+    background-image: url(../img/space-copenhagen-des-1x.jpg);
+    max-height: 780px;
+    padding-top: 100px;
+    position: relative;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .best-apartmens {
+      background-image: url(../img/space-copenhagen-des-2x.jpg);
+    }
+  }
+
+  .best-apartmens-title {
+    font-size: 125px;
+    line-height: 84%;
+    max-width: 836px;
+  }
+
+  .best-apartmens-par {
+    width: 430px;
+    min-height: 70px;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+  }
+}
+
+/* *************** Desktop 1920 ****************** */
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 2200px;
+  }
+
+  .best-apartmens {
+    max-height: 800px;
+  }
+}
