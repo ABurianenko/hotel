@@ -194,7 +194,6 @@ img {
 }
 
 /* *************** Desktop 1920 ****************** */
-
 @media (min-width: 1920px) {
   .container {
     max-width: 2200px;
