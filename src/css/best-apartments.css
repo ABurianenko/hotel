@@ -51,7 +51,7 @@ img {
 
   line-height: 100%;
   text-transform: uppercase;
-  color: #fcd043;
+  color: var(--secondary-color);
   margin-bottom: 233px;
   margin-left: 10px;
   max-width: 355px;
@@ -59,13 +59,13 @@ img {
 
 .line-container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 2220px;
   margin: 0 auto 100px;
 }
 
 .best-apartmens-line {
   stroke-width: 1px;
-  stroke: #fcd043;
+  stroke: var(--secondary-color);
   width: 100%;
   height: auto;
 }
@@ -84,7 +84,7 @@ img {
   font-weight: 400;
   font-size: 18px;
   text-transform: uppercase;
-  color: #fcd043;
+  color: var(--secondary-color);
   width: 210px;
   margin-left: auto;
   text-align: left;
@@ -116,7 +116,7 @@ img {
     background-image: url(../img/space-copenhagen-tab-1x.jpg);
     background-size: cover;
     background-position: center;
-    max-height: 590px;
+    max-height: 650px;
     padding: 50px 0 16px;
     position: relative;
   }
@@ -165,7 +165,7 @@ img {
 
   .best-apartmens {
     background-image: url(../img/space-copenhagen-des-1x.jpg);
-    max-height: 680px;
+    max-height: 780px;
     padding-top: 100px;
     position: relative;
   }
@@ -194,3 +194,12 @@ img {
 }
 
 /* *************** Desktop 1920 ****************** */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 2200px;
+  }
+
+  .best-apartmens {
+    max-height: 800px;
+  }
+}
