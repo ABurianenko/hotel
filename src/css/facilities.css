@@ -294,23 +294,35 @@
 
 /**
   |============================
-  | SECOND PART - ACCORDEON ANIMATION
+  | SECOND PART - ACCORDION ANIMATION
   |============================
 */
 
 /* Mobile 375px */
 
-.ac-arrow {
+.ac {
+  margin-bottom: 50px;
+}
+
+.ac-polygon {
   display: none;
 }
 
 .ac-trigger {
   background-color: transparent;
-  color: black;
+  color: var(--white) !important;
   border: none;
   width: 100%;
   height: 276px;
-  position: absolute;
+  position: absolute !important;
+}
+
+.ac-trigger::after {
+  display: none !important;
+}
+
+.ac.is-active .ac-panel {
+  overflow: visible !important;
 }
 
 .closed-panel-container {
@@ -320,7 +332,6 @@
   align-items: center;
   padding-left: 38px;
   padding-right: 38px;
-  padding-bottom: 50px;
   position: relative;
 }
 
@@ -337,10 +348,106 @@
   font-size: 30px;
   font-family: 'Miracle', sans-serif;
   font-weight: 400;
+  width: 30px;
 }
 
 .panel-header {
   font-size: 24px;
   font-family: 'Miracle', sans-serif;
   text-align: center;
+}
+
+.ac-panel {
+  display: flex;
+  justify-content: center;
+}
+
+/* transition 375px */
+.ac.js-enabled.is-active .closed-panel-container > img {
+  width: 355px;
+  height: 420px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.ac.js-enabled.is-active .number-p {
+  top: 460px;
+  left: 15px;
+}
+
+.ac.js-enabled.is-active .panel-header {
+  font-size: 30px;
+  width: 223px;
+  font-weight: 500;
+}
+
+.ac.js-enabled.is-active .ac-panel-p {
+  width: 230px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.ac.js-enabled.is-active .closed-panel-container {
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .ac {
+    margin-bottom: 50px;
+  }
+
+  .ac-trigger {
+    background-color: transparent;
+    color: var(--text-color) !important;
+    border: none;
+    width: 70px;
+    height: 50px;
+    left: 300px;
+    top: 80px;
+    font-size: 45px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .closed-panel-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+  }
+
+  .closed-panel-container img {
+    width: 170px;
+    height: 170px;
+    margin-bottom: 40px;
+    margin-right: 60px;
+  }
+
+  .number-p {
+    position: unset;
+    top: 0;
+    right: 55px;
+    font-size: 30px;
+    margin-right: 70px;
+    width: 30px;
+  }
+
+  .panel-header {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .ac-panel {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* transition 768px */
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 1920px) {
 }
