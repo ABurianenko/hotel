@@ -10,4 +10,4 @@ const accordion = new Accordion(container, {
 });
 
 //first question permanently opened
-// accordion.open(0);
+accordion.open(0);
