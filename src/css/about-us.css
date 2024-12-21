@@ -1,7 +1,8 @@
 .about-us-section {
     background-color: var(--primary-color);
     padding-top: 50px;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
+    position: relative;
 }
 
 .about-us-section::before,
@@ -22,8 +23,13 @@
 .main-img {
     width: 355px;
     height: 355px;
-
+    object-fit: cover;
     margin: 70px 0;
+}
+
+.hidden-img {
+    object-fit: cover;
+    display: none;
 }
 
 .about-us-subtitle {
@@ -35,9 +41,247 @@
     margin-bottom: 20px;
 }
 
-.about-us-text {
+.mob-text {
+    width: 293px;
     font-family: 'Helvetica Neue Roman', sans-serif;
     color: var(--white);
     font-size: 13px;
     line-height: 1.77;
+    opacity: 0.8;
+}
+
+.tablet-text {
+    display: none;
+}
+
+.about-us-logo {
+    position: absolute;
+    width: 70px;
+    height: 52px;
+    margin: 0 auto;
+    
+    position: relative;
+    z-index: 999;
+    top: -200px;
+    right: -110px;
+    transform: rotate(50deg);
+    transform-origin: center;
+}
+
+.about-us-label {
+    width: 24px;
+    height: 24px;
+    fill: var(--secondary-color);
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (min-width: 768px) {
+    .about-us-title {
+        width: 300px;
+    }
+
+    .hidden-img {
+        display: block;
+        width: 160px;
+        height: 212px;
+        position: absolute;
+        top: 80px;
+        right: 44px;
+    }
+
+    .description {
+        position: absolute;
+        top: 350px;
+        right: 80px;
+    }
+
+    .about-us-logo {
+        top: -560px;
+        right: -160px;
+        transform: rotate(300deg);
+        transform-origin: center;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .about-us-section {
+        padding: 0;
+        height: 832px;
+    }
+
+    .about-us-title {
+        width: 324px;
+        font-size: 100px;
+        line-height: 0.8;
+        margin-top: 150px;
+        margin-left: 198px;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .white-title {
+        color: var(--white);
+    }
+
+    .main-img {
+        width: 357px;
+        height: 530px;
+        margin: 0;
+
+        position: absolute;
+        top: 100px;
+        left: 20px;
+        z-index: 1;
+    }
+
+    .hidden-img {
+        top: 100px;
+        right: 24px;
+    }
+
+    .description {
+        position: absolute;
+        top: 444px;
+        right: 252px;
+    }
+
+    .about-us-subtitle {
+        font-size: 28px;
+        letter-spacing: 0.03em;
+
+        margin-bottom: 30px;
+    }
+
+    .mob-text {
+        display: none;
+    }
+
+    .tablet-text {
+        display: block;
+        width: 250px;
+        font-family: 'Helvetica Neue Roman', sans-serif;
+        color: var(--white);
+        font-size: 13px;
+        line-height: 1.77;
+        opacity: 0.64;
+    }
+
+    .about-us-logo {
+        top: 64px;
+        right: -318px;
+        transform: rotate(300deg);
+        transform-origin: center;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-us-section {
+        height: 976px;
+    }
+
+    .about-us-title {
+        width: 405px;
+        font-size: 125px;
+        line-height: 0.84;
+        margin-top: 200px;
+        margin-left: 410px;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .main-img {
+        width: 453px;
+        height: 636px;
+        
+        top: 125px;
+        z-index: 1;
+    }
+
+    .hidden-img {
+        width: 237px;
+        height: 312px;
+        top: 125px;
+    }
+
+    .description {
+        position: absolute;
+        top: 536px;
+        right: 428px;
+    }
+
+    .about-us-subtitle {
+        font-size: 36px;
+
+        margin-bottom: 40px;
+    }
+
+    .tablet-text {
+        width: 400px;
+        font-size: 18px;
+        line-height: 1.56;
+        opacity: 0.64;
+    }
+
+    .about-us-logo {
+        top: 80px;
+        right: -434px;
+        transform: rotate(300deg);
+        transform-origin: center;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .about-us-section {
+        height: 1300px;
+    }
+
+    .about-us-title {
+        width: 486px;
+        font-size: 150px;
+        line-height: 0.87;
+        margin-top: 310px;
+        margin-left: 816px;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .main-img {
+        width: 606px;
+        height: 850px;
+
+        top: 150px;
+        z-index: 1;
+    }
+
+    .hidden-img {
+        width: 314px;
+        height: 414px;
+        top: 150px;
+    }
+
+    .description {
+        position: absolute;
+        top: 760px;
+        right: 660px;
+    }
+
+    .about-us-subtitle {
+        font-size: 50px;
+        line-height: 1.2;
+        margin-bottom: 40px;
+    }
+
+    .tablet-text {
+        width: 444px;
+    }
+
+    .about-us-logo {
+        top: 116px;
+        right: -600px;
+        transform: rotate(300deg);
+        transform-origin: center;
+    }
 }

@@ -12,7 +12,7 @@ img {
   border: 0;
 }
 
-.container {
+.apartments-container {
   min-width: 375px;
   max-width: 1023px;
   margin: 0 auto;
@@ -108,7 +108,7 @@ img {
 /* **************** Tablet ***************** */
 
 @media (min-width: 1024px) {
-  .container {
+  .apartments-container {
     max-width: 1439px;
   }
 
@@ -159,7 +159,7 @@ img {
 /* ************ Desktop 1440 ********************* */
 
 @media (min-width: 1440px) {
-  .container {
+  .apartments-container {
     max-width: 1919px;
   }
 
@@ -195,7 +195,7 @@ img {
 
 /* *************** Desktop 1920 ****************** */
 @media (min-width: 1920px) {
-  .container {
+  .apartments-container {
     max-width: 2200px;
   }
 

@@ -8,26 +8,26 @@
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    max-width: 1023px;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .container {
-    max-width: 1024px;
+    max-width: 1439px;
     padding: 0 20px;
   }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1440px;
+    max-width: 1919px;
   }
 }
 
 @media only screen and (min-width: 1920px) {
   .container {
-    max-width: 1920px;
+    max-width: 2200px;
     padding: 0 30px;
   }
 }
