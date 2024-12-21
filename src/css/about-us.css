@@ -172,8 +172,6 @@
     .about-us-logo {
         top: 64px;
         right: -318px;
-        transform: rotate(300deg);
-        transform-origin: center;
     }
 }
 
@@ -228,8 +226,6 @@
     .about-us-logo {
         top: 80px;
         right: -434px;
-        transform: rotate(300deg);
-        transform-origin: center;
     }
 }
 
@@ -281,7 +277,5 @@
     .about-us-logo {
         top: 116px;
         right: -600px;
-        transform: rotate(300deg);
-        transform-origin: center;
     }
 }
