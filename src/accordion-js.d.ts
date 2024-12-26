@@ -1,1 +1,0 @@
-declare module 'accordion-js';
