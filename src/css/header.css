@@ -42,3 +42,182 @@
 .nav-link.active::after {
   background: #747bff;
 }
+
+
+
+
+.header {
+  background-color: #2e4239;
+  color: #ffffff;
+  padding: 10px 0;
+  position: relative;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  }
+  
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+  
+.nav {
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.nav-list li {
+  margin: 0 10px;
+}
+
+.nav-list a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #c0c0c0;
+}
+
+.phone {
+  display: block;
+}
+
+.phone a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.phone a:hover {
+  color: #c0c0c0;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon svg {
+  fill: #ffffff;
+  transition: fill 0.3s;
+}
+
+.menu-icon:hover svg {
+  fill: #c0c0c0;
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .phone {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: space-between;
+  }
+}
+
+
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2e4239;
+  color: #ffffff;
+  z-index: 1000;
+  overflow-y: auto;
+}
+
+.modal-content {
+  position: relative;
+  padding: 20px;
+}
+
+.close-modal {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+  
+.close-modal svg {
+  fill: #ffffff;
+  width: 25px;
+  height: 25px;
+}
+  
+.modal-nav {
+  list-style: none;
+  padding: 0;
+  margin: 50px 0;
+  text-align: center;
+}
+  
+.modal-nav li {
+  margin: 15px 0;
+}
+  
+.modal-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+  
+.modal-nav a:hover {
+  color: #c0c0c0;
+}
+  
+.modal-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+  
+.modal-footer p {
+  margin: 10px 0;
+ }
+  
+.social-links a {
+  color: #ffffff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+  
+.social-links a:hover {
+  color: #c0c0c0;
+}
