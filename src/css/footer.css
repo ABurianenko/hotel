@@ -2,17 +2,20 @@
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;   
+  padding: 20px 40px;
   background-color: #fff;
   border-top: 1px solid #e0e0e0;
   background-color: #f9f8f6;
 }
+
 .footer-desc {
   text-align: center;
 }
+
 .footer-link {
   position: relative;
 }
+
 .footer-link::before {
   content: '';
   position: absolute;
@@ -113,6 +116,7 @@ span {
   background-color: #2e4a2f;
   color: #fff;
 }
+
 
 .footer-container {
   display: flex;
