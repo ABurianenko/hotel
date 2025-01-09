@@ -12,14 +12,76 @@
     <script type="module" crossorigin src="/hotel/index.js"></script>
     <link rel="modulepreload" crossorigin href="/hotel/assets/vendor-CYqufn2y.js">
     <link rel="stylesheet" crossorigin href="/hotel/assets/vendor-BSOEtDFN.css">
-    <link rel="stylesheet" crossorigin href="/hotel/assets/index-BLXmS4FQ.css">
+    <link rel="stylesheet" crossorigin href="/hotel/assets/index-DBr7P4Q9.css">
   </head>
   <body>
     <header class="header">
-  <div class="container">
-    
+  <div class="container cont">
+    <div class="logo">BankHotel</div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#rooms">ROOMS</a></li>
+        <li><a href="#restaurant">RESTAURANT</a></li>
+        <li><a href="#conference">CONFERENCE HALL</a></li>
+        <li><a href="#contacts">CONTACTS</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="menu-icon" aria-label="Menu" id="menu-button">
+      <svg width="25" height="25">
+        <use href="./src/svg/symbol-defs.svg#icon-menu"></use>
+      </svg>
+    </a>
+    <div class="phone">
+      <a href="tel:+380322975020">+38 032 297 50 20</a>
+    </div>
   </div>
 </header>
+
+<div class="modal" id="menu-modal">
+  <div class="modal-content">
+    <button class="close-modal" id="close-modal" aria-label="Close menu">
+      <svg width="25" height="25">
+        <use href="./src/svg/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="modal-nav">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#rooms">ROOMS</a></li>
+      <li><a href="#restaurant">RESTAURANT</a></li>
+      <li><a href="#conference">CONFERENCE HALL</a></li>
+      <li><a href="#contacts">CONTACTS</a></li>
+    </ul>
+    <div class="modal-footer">
+      <p><a href="tel:+380322975020">+38 032 297 50 20</a></p>
+      <p>8 LYSTOPADOVOHO CHYNU, LVIV</p>
+      <div class="social-links">
+        <a
+          href="https://www.facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >FACEBOOK</a
+        >
+        <a
+          href="https://www.instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >INSTAGRAM</a
+        >
+        <a
+          href="https://www.twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          >TWITTER</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./src/js/menu.js"></script>
 
 
     <main>
